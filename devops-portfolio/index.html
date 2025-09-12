@@ -7,28 +7,79 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 100px;
       background: #f9f9f9;
       color: #333;
+      margin: 0;
+      padding: 0;
     }
+
+    .container {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      text-align: center;
+    }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
+
     h2 {
       font-size: 1.8rem;
       color: #007acc;
       margin-bottom: 20px;
     }
+
     p {
       font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .projects {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .emoji {
+      font-size: 1.2rem;
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
-  <h1>Hello Hi, I'm Prakash</h1>
-  <h2>DevOps Engineer</h2>
-  <p>I build reliable deployments with <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Terraform</strong>, and <strong>CI/CD</strong>.</p>
+  <div class="container">
+    <h1>Hello Hi, I'm Prakash — DevOps Engineer</h1>
+    <p>I build reliable deployments & scalable sites (<strong>Kubernetes</strong>, <strong>Terraform</strong>, <strong>CI/CD</strong>).</p>
+
+    <div class="projects">
+      <h2>🔭 Featured Projects</h2>
+      <div class="project">
+        <span class="emoji">🚀</span>
+        <a href="https://github.com/yourusername/k8s-ecommerce" target="_blank">k8s-ecommerce</a> — Full k8s deployment + Helm + GitHub Actions — <a href="https://live-demo-url.com" target="_blank">live demo</a>
+      </div>
+      <div class="project">
+        <span class="emoji">🛠️</span>
+        <a href="https://github.com/yourusername/terraform-aws-webapp" target="_blank">terraform-aws-webapp</a> — Terraform infra (EC2, RDS, S3) with deploy script
+      </div>
+    </div>
+  </div>
 </body>
 </html>
