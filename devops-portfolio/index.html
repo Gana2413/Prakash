@@ -5,19 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prakash - DevOps Engineer</title>
   <style>
+    /* Body with animated gradient background */
     body {
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #333;
       margin: 0;
       padding: 0;
+      color: #333;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     .container {
       max-width: 800px;
       margin: 100px auto;
       padding: 20px;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.9); /* slightly transparent for gradient effect */
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       border-radius: 10px;
       text-align: center;
@@ -73,7 +82,8 @@
       <h2>🔭 Featured Projects</h2>
       <div class="project">
         <span class="emoji">🚀</span>
-        <a href="https://github.com/yourusername/k8s-ecommerce" target="_blank">k8s-ecommerce</a> — Full k8s deployment + Helm + GitHub Actions — <a href="https://live-demo-url.com" target="_blank">live demo</a>
+        <a href="https://github.com/yourusername/k8s-ecommerce" target="_blank">k8s-ecommerce</a> — Full k8s deployment + Helm + GitHub Actions — 
+        <a href="https://live-demo-url.com" target="_blank">live demo</a>
       </div>
       <div class="project">
         <span class="emoji">🛠️</span>
